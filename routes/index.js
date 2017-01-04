@@ -9,4 +9,10 @@ router.get('/', function(req, res, next) {
   });
 });
 
+router.get('/login', function(req, res, next){
+    res.render('login', {
+        title:'我是一个登录页面'
+    });
+});
+
 module.exports = router;
