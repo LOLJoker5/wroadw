@@ -27,6 +27,7 @@ app.use(express.static('public'));  //托管静态文件
 // app.use('/static',express.static('public'));  //如果需要访问的文件都放在一个虚拟的目录下面，即可以用这种方法
 
 app.use('/', index);
+// app.use('/login', login);
 app.use(function(req,res,next){
     console.log('Time: %d', Date.now());
     next();
